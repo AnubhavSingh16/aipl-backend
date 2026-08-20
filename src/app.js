@@ -7,15 +7,22 @@ import productRoutes from "./routes/productRoutes.js";
 
 
 
-
-
-
-
-
-
 const app = express();
 
-app.use(cors({ origin: process.env.CORS_ORIGIN }));
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://aiipl-website.vercel.app",
+];
+
+app.use(
+  cors({
+    origin: allowedOrigins,
+  })
+);
+
+
+
+
 app.use(express.json());
 
 app.get("/api/health", (req, res) => {
