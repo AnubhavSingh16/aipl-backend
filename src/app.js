@@ -5,6 +5,14 @@ import categoryRoutes from "./routes/categoryRoutes.js";
 import enquiryRoutes from "./routes/enquiryRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
 
+
+
+
+
+
+
+
+
 const app = express();
 
 app.use(cors({ origin: process.env.CORS_ORIGIN }));
