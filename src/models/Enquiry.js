@@ -19,6 +19,8 @@ const enquirySchema = new mongoose.Schema(
     topic: { type: String, default: "General enquiry" },
     message: { type: String, required: true },
     items: { type: [enquiryItemSchema], default: [] },
+    fulfilled: { type: Boolean, default: false },
+    note: { type: String, default: "" },
   },
   { timestamps: true }
 );
