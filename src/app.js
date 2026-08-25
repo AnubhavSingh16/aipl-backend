@@ -5,6 +5,8 @@ import bannerRoutes from "./routes/bannerRoutes.js";
 import categoryRoutes from "./routes/categoryRoutes.js";
 import enquiryRoutes from "./routes/enquiryRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
+import subtypeRoutes from "./routes/subtypeRoutes.js";
+import typeRoutes from "./routes/typeRoutes.js";
 
 
 
@@ -33,6 +35,8 @@ app.get("/api/health", (req, res) => {
 app.use("/api/auth", authRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/categories", categoryRoutes);
+app.use("/api/types", typeRoutes);
+app.use("/api/subtypes", subtypeRoutes);
 app.use("/api/enquiries", enquiryRoutes);
 app.use("/api/banners", bannerRoutes);
 
