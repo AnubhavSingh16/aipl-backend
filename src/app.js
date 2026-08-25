@@ -4,6 +4,7 @@ import authRoutes from "./routes/authRoutes.js";
 import bannerRoutes from "./routes/bannerRoutes.js";
 import categoryRoutes from "./routes/categoryRoutes.js";
 import enquiryRoutes from "./routes/enquiryRoutes.js";
+import heroSlideRoutes from "./routes/heroSlideRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
 import subtypeRoutes from "./routes/subtypeRoutes.js";
 import typeRoutes from "./routes/typeRoutes.js";
@@ -39,6 +40,7 @@ app.use("/api/types", typeRoutes);
 app.use("/api/subtypes", subtypeRoutes);
 app.use("/api/enquiries", enquiryRoutes);
 app.use("/api/banners", bannerRoutes);
+app.use("/api/hero-slides", heroSlideRoutes);
 
 app.use((req, res) => {
   res.status(404).json({ error: "Not found" });
