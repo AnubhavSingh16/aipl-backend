@@ -16,7 +16,7 @@ const app = express();
 const allowedOrigins = [
   "http://localhost:5173",
   "https://aiipl-website.vercel.app",
-  "https://anubhavinfo.in"
+  "https://anubhavinfo.in",
 ];
 
 app.use(
